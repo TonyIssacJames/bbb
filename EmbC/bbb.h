@@ -4,6 +4,8 @@
 
 #include "common.h"
 
+#define  DEVICE_ID 0x44e10600
+
 #define _REG_ADDR(base, off) ((volatile uint32_t *)((base) + (off)))
 #define _REG(base, off) (*_REG_ADDR(base, off))
 

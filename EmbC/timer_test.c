@@ -16,6 +16,7 @@ void handler(void)
 
 int c_entry(void)
 {
+        unsigned int i;
 	debug_init();
 	leds_init();
 
@@ -36,7 +37,7 @@ int c_entry(void)
 #endif
 	 */
 
-	for (;;)
+	for (i =0; ; i++)
 	{
 		/*
 		print_str("Press any key: ");
@@ -65,7 +66,8 @@ int c_entry(void)
 		if (TIMER0_IRQSTATUS & (1 << 1))
 		{
 			TIMER0_IRQSTATUS = (1 << 1);
-			leds_toggle(3);
+			leds_toggle(i&3);
+			
 		}
 #endif
 	}

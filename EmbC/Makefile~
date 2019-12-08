@@ -1,4 +1,4 @@
-SRCS := first.c blink_led.c leds_test.c serial_test.c timer_test.c eeprom_test.c fw_app.c
+SRCS := first.c blink_led.c leds_test.c serial_test.c timer_test.c eeprom_test.c
 #SRCS := blink_led.c leds_test.c serial_test.c switch_test.c timer_test.c eeprom_test.c fw_app.c decode_xmodem.c
 BINS := $(SRCS:.c=.bin)
 

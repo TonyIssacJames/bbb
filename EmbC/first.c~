@@ -6,7 +6,8 @@ static inline void loop_forever(void)
 {
 }
 
-int c_entry(void)
+int main(void)
+//int c_entry(void)
 {
 	init_shell();
 	for (;;)

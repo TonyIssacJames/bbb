@@ -1,0 +1,21 @@
+fw_app.o: fw_app.c debug.h common.h leds.h timer.h eeprom.h interrupt.h \
+ bbb.h
+decode_xmodem.o: decode_xmodem.c serial.h common.h debug.h
+arm.o: arm.c arm.h
+common.o: common.c common.h
+eeprom.o: eeprom.c i2c.h common.h eeprom.h
+timer_test.o: timer_test.c debug.h common.h leds.h timer.h interrupt.h \
+ bbb.h
+switch_test.o: switch_test.c debug.h common.h leds.h switch.h
+interrupt.o: interrupt.c bbb.h common.h arm.h interrupt.h
+leds.o: leds.c bbb.h common.h leds.h
+first.o: first.c
+serial_test.o: serial_test.c serial.h common.h bbb.h
+blink_led.o: blink_led.c common.h
+eeprom_test.o: eeprom_test.c common.h debug.h eeprom.h
+serial.o: serial.c bbb.h common.h serial.h
+timer.o: timer.c bbb.h common.h timer.h interrupt.h
+debug.o: debug.c serial.h common.h debug.h
+leds_test.o: leds_test.c leds.h common.h
+i2c.o: i2c.c bbb.h common.h i2c.h
+switch.o: switch.c bbb.h common.h switch.h interrupt.h
